@@ -40,8 +40,7 @@ messageForm.addEventListener('submit', (event) => {
         const timeString = new Date().toLocaleTimeString();
         document.getElementById('result').textContent += `Successfully sent message. [${timeString}]\n`;
       } else {
-        console.log(result);
-        document.getElementById('result').textContent += result;
+        document.getElementById('result').textContent += `${result}\n`;
       }
     })
     .catch(error => console.error('Error:', error));
@@ -92,8 +91,7 @@ embedForm.addEventListener('submit', (event) => {
         const timeString = new Date().toLocaleTimeString();
         document.getElementById('result').textContent += `Successfully sent message. [${timeString}]\n`;
       } else {
-        console.log(result);
-        document.getElementById('result').textContent += result;
+        document.getElementById('result').textContent += `${result}\n`;
       }
     })
     .catch(error => console.error('Error:', error));
