@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disord Webhook Sender</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Discord Webhook Sender</h1>
+            <h5>Keep field empty for default|empty</h5>
+        </div>
+        <div class="form">
+            <form id="message-form">
+                <label for="webhook-url">Webhook URL:</label>
+                <input type="text" id="webhook-url" name="webhook-url" required>
+                <label for="webhook-name">Webhook Name:</label>
+                <input type="text" id="webhook-name" name="webhook-name">
+                <label for="image-url">Profile Image URL:</label>
+                <input type="text" id="image-url" name="image-url">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" id="send-message">Send Message</button>
+            </form>
+            <form id="embed-form">
+                <label for="embed-title">Title:</label>
+                <input type="text" id="embed-title" name="embed-title">
+                <label for="embed-description">Description:</label>
+                <textarea id="embed-description" name="embed-description"></textarea>
+                <label for="footer-message">Footer:</label>
+                <input type="text" id="footer-message" name="footer-message">
+                <label for="footer-url">Footer Image Url:</label>
+                <input type="text" id="footer-url" name="footer-url">
+                <label for="embed-color">Color:</label>
+                <input type="color" id="embed-color" name="embed-color" value="#7289da">
+                <button type="submit" id="send-embed">Send Embed</button>
+            </form>
+        </div>
+        <div class="result">
+            <h2>Result:</h2>
+            <pre id="result"></pre>
+        </div>
+    </div>
+    <footer>Made with <span class="heart">&#x2764;</span> by <a class="link" href="https://github.com/Inaay">Inaayat</a></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
